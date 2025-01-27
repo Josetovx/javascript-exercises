@@ -1,7 +1,7 @@
-const removeFromArray = function(array, item) {
+const removeFromArray = function(array, ...items) {
     let arrayremoved = array.filter(checkCondition);
     function checkCondition (itemCondition) {
-        return item !== itemCondition;
+        return !items.includes(itemCondition);
     }
     return arrayremoved;
 };
