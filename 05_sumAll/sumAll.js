@@ -5,8 +5,11 @@ const sumAll = function(intBeg, intFin) {
         intFin = change;
     }
     if (intBeg < 0 || intFin < 0) {
-        return 'ERROR'
-    } 
+        return 'ERROR';
+    }
+    if (!Number.isInteger(intBeg) || !Number.isInteger(intFin)) {
+        return 'ERROR';
+    }
     let sum = 0;
     for (let i = intBeg; i <= intFin; i++) {
       sum += i
