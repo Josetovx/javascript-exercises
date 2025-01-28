@@ -4,6 +4,9 @@ const sumAll = function(intBeg, intFin) {
         intBeg = intFin;
         intFin = change;
     }
+    if (intBeg < 0 || intFin < 0) {
+        return 'ERROR'
+    } 
     let sum = 0;
     for (let i = intBeg; i <= intFin; i++) {
       sum += i
