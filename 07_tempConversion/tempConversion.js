@@ -4,7 +4,10 @@ const convertToCelsius = function(farDeg) {
   return roundedCelsius;
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(celDeg) {
+  const fahrenheit = (celDeg * (9 / 5) + 32);
+  const roundedFahrenheit = Math.round(fahrenheit * 10) / 10;
+  return roundedFahrenheit;
 };
 
 // Do not edit below this line
